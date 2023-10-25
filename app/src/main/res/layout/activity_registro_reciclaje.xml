@@ -31,7 +31,7 @@
                 android:id="@+id/img_logo"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/logoBlanco"
+                android:src="@drawable/logoblanco"
                 android:layout_gravity="center">
             </ImageView>
 
