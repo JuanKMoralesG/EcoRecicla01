@@ -4,6 +4,260 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".RegistroReciclaje"
+    android:orientation="vertical"
+    android:background="@drawable/fondoeco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="575dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logoblanco">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/title_logo"
+                style="@style/TittleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|start"
+                android:text="EcoRecicla"
+                android:textColor="@color/white">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="20"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/img_logo_verde"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/logoverde">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/registro"
+                    style="@style/TittleCardStyle"
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="85dp"
+                    android:text="Registrar Reciclaje"
+                    android:textSize="32sp">
+
+                </TextView>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginVertical="20dp"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/img_Estadistica"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/estadisticas">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/estadistica"
+                    style="@style/TittleCardStyle"
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="85dp"
+                    android:text="Estadistica"
+                    android:textSize="32sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/img_tips"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/tips">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tips"
+                    style="@style/TittleCardStyle"
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="85dp"
+                    android:text="Tips de Reciclaje"
+                    android:textSize="32sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginVertical="20dp"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/img_puntos"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/puntos">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/puntos"
+                    style="@style/TittleCardStyle"
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="85dp"
+                    android:text="Puntos de Reciclaje"
+                    android:textSize="30sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_weight="0.8"
+        android:background="@color/grismenu"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img_menu_registro"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:src="@drawable/logoverde">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_estadistica"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:src="@drawable/estadisticas">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:src="@drawable/home">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_tips"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:src="@drawable/tips">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_puntos"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:src="@drawable/puntos">
+
+        </ImageView>
+
+    </LinearLayout>
 
 </LinearLayout>
