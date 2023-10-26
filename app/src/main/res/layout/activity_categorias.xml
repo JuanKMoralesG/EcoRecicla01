@@ -4,6 +4,244 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Categorias">
+    tools:context=".Categorias"
+    android:orientation="vertical"
+    android:background="@drawable/fondoeco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.4"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logoblanco"
+                android:layout_gravity="center">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/title_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="EcoRecicla"
+                android:textColor="@color/white"
+                style="@style/TittleStyle">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/img_basura_blanca"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/basurablanca"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp">
+
+                </ImageView>
+
+                <TextView
+                    style="@style/TittleCardStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:text="Caneca Blanca"
+                    android:layout_gravity="start">
+
+                </TextView>
+
+                <TextView
+                    style="@style/Text_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Residuos Aprovechables limpios y secos, como plástico, vidrio, metales, papel y cartón."
+                    android:layout_gravity="start">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/img_basura_verde"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/basuraverde"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp">
+
+                </ImageView>
+
+                <TextView
+                    style="@style/TittleCardStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="85dp"
+                    android:text="Caneca Verde"
+                    android:layout_gravity="start">
+
+                </TextView>
+
+                <TextView
+                    style="@style/Text_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="55dp"
+                    android:text="Residuos Orgánicos Aprovechables como los restos de comida."
+                    android:layout_gravity="start">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/img_basura_negra"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/basuranegra"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="45dp">
+
+                </ImageView>
+
+                <TextView
+                    style="@style/TittleCardStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:text="Caneca Negra"
+                    android:layout_gravity="start">
+
+                </TextView>
+
+                <TextView
+                    style="@style/Text_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Residuos NO Aprovechables como el papel higiénico; servilletas, papeles y cartones contaminados con comida; papeles metalizados, entre otros.."
+                    android:layout_gravity="start">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/grismenu"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical|center">
+
+        <ImageView
+            android:id="@+id/img_menu_registro"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logoverde"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_estadistica"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/estadisticas"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_tips"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tips"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_puntos"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/puntos"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
 
 </LinearLayout>
