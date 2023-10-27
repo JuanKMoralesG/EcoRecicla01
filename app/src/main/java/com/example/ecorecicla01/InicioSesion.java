@@ -13,8 +13,6 @@ public class InicioSesion extends AppCompatActivity {
     TextView registrarse;
     Button login;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
