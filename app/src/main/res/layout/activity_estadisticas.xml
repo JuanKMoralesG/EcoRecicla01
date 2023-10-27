@@ -4,6 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Estadisticas">
+    tools:context=".Estadisticas"
+    android:orientation="vertical"
+    android:background="@drawable/fondoeco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.4"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logoblanco"
+                android:layout_gravity="center">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/title_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="EcoRecicla"
+                android:textColor="@color/white"
+                style="@style/TittleStyle">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/grismenu"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical|center">
+
+        <ImageView
+            android:id="@+id/img_menu_registro"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logoverde"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_estadistica"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/estadisticas"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_tips"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tips"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_puntos"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/puntos"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
 
 </LinearLayout>

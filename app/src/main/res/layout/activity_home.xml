@@ -67,7 +67,8 @@
                 android:layout_height="80dp"
                 app:cardBackgroundColor="@color/griscard"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
+                app:cardElevation="20dp"
+                android:layout_gravity="center">
 
                 <ImageView
                     android:id="@+id/img_logo_verde"
@@ -103,7 +104,8 @@
                 android:layout_marginVertical="20dp"
                 app:cardBackgroundColor="@color/griscard"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
+                app:cardElevation="20dp"
+                android:layout_gravity="center">
 
                 <ImageView
                     android:id="@+id/img_Estadistica"
@@ -137,7 +139,8 @@
                 android:layout_height="80dp"
                 app:cardBackgroundColor="@color/griscard"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
+                app:cardElevation="20dp"
+                android:layout_gravity="center">
 
                 <ImageView
                     android:id="@+id/img_tips"
@@ -172,7 +175,8 @@
                 android:layout_marginVertical="20dp"
                 app:cardBackgroundColor="@color/griscard"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
+                app:cardElevation="20dp"
+                android:layout_gravity="center">
 
                 <ImageView
                     android:id="@+id/img_puntos"
