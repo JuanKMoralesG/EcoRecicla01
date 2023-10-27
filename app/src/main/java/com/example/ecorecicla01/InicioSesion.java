@@ -21,7 +21,7 @@ public class InicioSesion extends AppCompatActivity {
         registrarse=findViewById(R.id.textView3);
         login=findViewById(R.id.button);
 
-        Intent register= new Intent(getApplicationContext(), RegistroReciclaje.class);
+        Intent register= new Intent(getApplicationContext(), RegistroUsuario.class);
         Intent home= new Intent(getApplicationContext(), Home.class);
 
         login.setOnClickListener(new View.OnClickListener() {
