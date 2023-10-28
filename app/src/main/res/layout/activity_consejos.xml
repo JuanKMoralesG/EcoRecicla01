@@ -57,10 +57,53 @@
             android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/textView9"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="erid">
-            </TextView>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.1dp"
+                android:gravity="center"
+                android:text="consejos"
+                android:textColor="#FAF8F8"
+                android:textColorHint="#F3EFEF"
+                android:textColorLink="#F6F4F4"
+                android:textSize="34sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonconsejosdiarios"
+                android
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:autoSizeTextType="none"
+                android:fontFamily="casual"
+                android:text="Activar consejos diarios"
+                android:textColor="#30E4AB"
+                android:textColorHint="#F4EFEF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButtonConsejossemanales"
+                android
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:autoSizeTextType="none"
+                android:fontFamily="casual"
+                android:text="Activar consejos semanales"
+                android:textColor="#37CF88"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNoAhorro"
+                android
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:autoSizeTextType="none"
+                android:fontFamily="casual"
+                android:text="Modo no ahorrador"
+                android:textColor="#3FDD67"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
 
