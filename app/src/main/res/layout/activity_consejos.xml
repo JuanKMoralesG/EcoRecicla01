@@ -56,7 +56,54 @@
             android:layout_marginTop="20dp"
             android:gravity="center_vertical">
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_gravity="center_horizontal">
 
+                <TextView
+                    style="@style/TittleCardStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consejos o Tips"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="62dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/consejos"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp">
+                </ImageView>
+
+                <TextView
+                    style="@style/Text_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="500dp"
+                    android:text="Pon en practica estos consejos utiles para tu hogasr y el lugar donde trabajas."
+                    android:textAlignment="center">
+
+                </TextView>
+
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 

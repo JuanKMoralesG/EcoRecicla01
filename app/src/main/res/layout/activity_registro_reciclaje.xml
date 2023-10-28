@@ -54,7 +54,187 @@
             android:layout_weight="8"
             android:orientation="vertical"
             android:layout_marginTop="20dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="@color/griscard">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    style="@style/TittleCardStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registro de Reciclaje"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9.5"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cant de Bolsas Blancas"
+                        android:textAlignment="center"
+                        android:layout_marginTop="30dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/griscard">
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peso Aprox en Kg"
+                        android:textAlignment="center"
+                        android:layout_marginTop="30dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="65dp"
+                        android:background="@color/griscard">
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cant de Bolsas Negras"
+                        android:textAlignment="center"
+                        android:layout_marginTop="30dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/griscard">
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peso Aprox en Kg"
+                        android:textAlignment="center"
+                        android:layout_marginTop="30dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="65dp"
+                        android:background="@color/griscard">
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cant de Bolsas Verdes"
+                        android:textAlignment="center"
+                        android:layout_marginTop="30dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/griscard">
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peso Aprox en Kg"
+                        android:textAlignment="center"
+                        android:layout_marginTop="30dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="65dp"
+                        android:background="@color/griscard">
+                    </EditText>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
 
 

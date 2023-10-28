@@ -83,23 +83,22 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="210dp"
             android:layout_marginRight="40dp"
             android:text="¿Has olvidado tu contraseña?"
-            android:textSize="18dp"/>
+            style="@style/Recicle_Text_Style"/>
 
         <TextView
             android:id="@+id/textView3"
             style="@style/TittleCardStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="240dp"
-            android:layout_marginLeft="130dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="90dp"
             android:layout_marginRight="40dp"
             android:text="Crear Usuario"
-            android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/button"
