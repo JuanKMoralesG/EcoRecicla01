@@ -24,6 +24,14 @@
 
     </style>
 
+    <style name="Recicle_Text_Style">
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/cabin_semibold</item>
+        <item name="android:shadowColor">@color/gray</item>
+
+    </style>
+
+
     <style name="ButtonStyle">
         <item name="android:fontFamily">@font/cabin_bold</item>
         <item name="android:textSize">42dp</item>

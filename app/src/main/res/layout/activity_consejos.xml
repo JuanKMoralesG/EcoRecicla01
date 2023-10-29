@@ -56,56 +56,86 @@
             android:layout_marginTop="20dp"
             android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/textView9"
+
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0.1dp"
-                android:gravity="center"
-                android:text="consejos"
-                android:textColor="#FAF8F8"
-                android:textColorHint="#F3EFEF"
-                android:textColorLink="#F6F4F4"
-                android:textSize="34sp" />
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/griscard"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_gravity="center_horizontal">
 
-            <RadioButton
-                android:id="@+id/radioButtonconsejosdiarios"
-                android
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:autoSizeTextType="none"
-                android:fontFamily="casual"
-                android:text="Activar consejos diarios"
-                android:textColor="#30E4AB"
-                android:textColorHint="#F4EFEF"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <RadioButton
-                android:id="@+id/radioButtonConsejossemanales"
-                android
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:autoSizeTextType="none"
-                android:fontFamily="casual"
-                android:text="Activar consejos semanales"
-                android:textColor="#37CF88"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <RadioButton
-                android:id="@+id/radioButtonNoAhorro"
-                android
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:autoSizeTextType="none"
-                android:fontFamily="casual"
-                android:text="Modo no ahorrador"
-                android:textColor="#3FDD67"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="consejos"
+                    android:textColor="#FAF8F8"
+                    android:textColorHint="#F3EFEF"
+                    android:textColorLink="#F6F4F4"
+                    android:textSize="34sp" />
 
 
+                <TextView
+                    style="@style/Text_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="500dp"
+                    android:text="Pon en practica estos consejos utiles para tu hogasr y el lugar donde trabajas."
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <RadioButton
+                    android:id="@+id/radioButtonconsejosdiarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:autoSizeTextType="none"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="50dp"
+                    android:text="Activar consejos diarios"
+                    android:textColor="#30E4AB"
+                    android:textColorHint="#F4EFEF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonConsejossemanales"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:autoSizeTextType="none"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="120dp"
+                    android:text="Activar consejos semanales"
+                    android:textColor="#37CF88"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNoAhorro"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:autoSizeTextType="none"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="200dp"
+                    android:text="Modo no ahorrador"
+                    android:textColor="#3FDD67"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
