@@ -53,21 +53,20 @@
             />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editTextUserLogin"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="58dp"
             android:layout_marginVertical="100dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:ems="10"
-            android:hint="Usuario o Email"
+            android:hint="Usuario-Email-Telefono"
             android:inputType="text"
             android:textColor="@color/gray"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
@@ -90,7 +89,7 @@
             style="@style/Recicle_Text_Style"/>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewCrearUsuario"
             style="@style/TittleCardStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
