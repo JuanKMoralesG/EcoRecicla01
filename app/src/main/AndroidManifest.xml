@@ -13,13 +13,19 @@
         android:theme="@style/Theme.EcoRecicla01"
         tools:targetApi="34">
         <activity
+            android:name=".Organicos"
+            android:exported="false" />
+        <activity
+            android:name=".NoAprovechables"
+            android:exported="false" />
+        <activity
+            android:name=".Aprovechables"
+            android:exported="false" />
+        <activity
             android:name=".Consejos"
             android:exported="false" />
         <activity
             android:name=".Estadisticas"
-            android:exported="false" />
-        <activity
-            android:name=".RegistroReciclaje"
             android:exported="false" />
         <activity
             android:name=".Categorias"

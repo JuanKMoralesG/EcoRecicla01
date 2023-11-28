@@ -26,21 +26,20 @@ public class RegistroUsuario extends AppCompatActivity {
 
     TextInputLayout name, email, phone, password1, password2;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_usuario);
 
         nuevoUsuario = findViewById(R.id.btnNU);
-        name=findViewById(R.id.NombreUsuario);
+
+        name = findViewById(R.id.NombreUsuario);
         email = findViewById(R.id.Email);
         phone = findViewById(R.id.Telefono);
         password1 = findViewById(R.id.Password1);
         password2 = findViewById(R.id.Password2);
 
-        Intent nuevousuario= new Intent(getApplicationContext(), Home.class);
+        Intent nuevousuario= new Intent(getApplicationContext(), InicioSesion.class);
 
         nuevoUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -143,5 +142,5 @@ public class RegistroUsuario extends AppCompatActivity {
         }catch (Exception error){
             error.printStackTrace();
         }
-}
+    }
 }

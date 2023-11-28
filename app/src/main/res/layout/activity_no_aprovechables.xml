@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroReciclaje"
+    tools:context=".NoAprovechables"
     android:orientation="vertical"
     android:background="@drawable/fondoeco">
 
@@ -55,6 +55,7 @@
             android:orientation="vertical"
             android:layout_marginTop="20dp"
             android:gravity="center_vertical"
+            android:padding="20dp"
             android:background="@color/griscard">
 
             <LinearLayout
@@ -70,175 +71,153 @@
                     android:layout_height="wrap_content"
                     android:text="Registro de Reciclaje"
                     android:textAlignment="center"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="10dp">
 
                 </TextView>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="9.5"
+                android:layout_weight="5"
                 android:orientation="vertical"
                 android:layout_gravity="center">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/img_basura_blanca"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/basuranegra">
+
+                    </ImageView>
+
+                    <TextView
+                        style="@style/Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Residuos NO Aprovechables como el papel higiénico; servilletas, papeles y cartones contaminados con comida; papeles metalizados, entre otros.."
+                        android:layout_gravity="start">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
 
                     <TextView
                         style="@style/Recicle_Text_Style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cant de Bolsas Blancas"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp">
+                        android:text="Cantidad"
+                        android:layout_weight="1"                        >
 
                     </TextView>
 
                     <EditText
-                        android:layout_width="50dp"
+                        android:id="@+id/cant_No_aprov"
+                        android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginStart="10dp"
-                        android:background="@color/griscard">
+                        android:layout_weight="1"
+                        android:background="@color/griscard"
+                        android:hint="No"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        >
                     </EditText>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
 
                     <TextView
                         style="@style/Recicle_Text_Style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Peso Aprox en Kg"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp">
+                        android:text="Peso Aprox (kg)"
+                        android:layout_weight="1">
 
                     </TextView>
 
                     <EditText
-                        android:layout_width="50dp"
+                        android:id="@+id/peso_No_aprov"
+                        android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginStart="65dp"
-                        android:background="@color/griscard">
+                        android:layout_weight="3"
+                        android:background="@color/griscard"
+                        android:hint="Kg"
+                        android:textAlignment="center"
+                        android:inputType="number">
+
                     </EditText>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
 
                     <TextView
                         style="@style/Recicle_Text_Style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cant de Bolsas Negras"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp">
+                        android:text="Mes"
+                        android:layout_weight="8">
 
                     </TextView>
 
-                    <EditText
-                        android:layout_width="50dp"
+                    <Spinner
+                        android:id="@+id/spinnerMonthsNoAprov"
+                        android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginStart="10dp"
+                        android:entries="@array/months"
+                        android:layout_weight="3"
+                        android:scrollbarSize="10dp"
+                        android:textAlignment="center"
                         android:background="@color/griscard">
-                    </EditText>
+
+                    </Spinner>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center">
 
-                    <TextView
-                        style="@style/Recicle_Text_Style"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Peso Aprox en Kg"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp">
-
-                    </TextView>
-
-                    <EditText
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginStart="65dp"
-                        android:background="@color/griscard">
-                    </EditText>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        style="@style/Recicle_Text_Style"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cant de Bolsas Verdes"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp">
-
-                    </TextView>
-
-                    <EditText
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginStart="10dp"
-                        android:background="@color/griscard">
-                    </EditText>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        style="@style/Recicle_Text_Style"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Peso Aprox en Kg"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp">
-
-                    </TextView>
-
-                    <EditText
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginStart="65dp"
-                        android:background="@color/griscard">
-                    </EditText>
+                    <Button
+                        android:id="@+id/btnRegistrar_NoAprov"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/green"
+                        android:text="Registrar Reciclaje"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        >
+                    </Button>
 
                 </LinearLayout>
 
             </LinearLayout>
-
-
-
-
-
 
         </LinearLayout>
 

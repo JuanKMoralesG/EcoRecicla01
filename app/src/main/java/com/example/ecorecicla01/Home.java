@@ -32,7 +32,7 @@ public class Home extends AppCompatActivity {
         Intent datos = new Intent(getApplicationContext(), Estadisticas.class);
         Intent consejos = new Intent(getApplicationContext(), Consejos.class);
 
-        Intent recicle1 = new Intent(getApplicationContext(), Consejos.class);
+        Intent recicle1 = new Intent(getApplicationContext(), Categorias.class);
         Intent estadisticas = new Intent(getApplicationContext(), Estadisticas.class);
         Intent consejos1 = new Intent(getApplicationContext(), Consejos.class);
         Intent home = new Intent(getApplicationContext(), Home.class);

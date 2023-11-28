@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aprovechables"
+    android:orientation="vertical"
+    android:background="@drawable/fondoeco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.4"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logoblanco"
+                android:layout_gravity="center">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/title_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="EcoRecicla"
+                android:textColor="@color/white"
+                style="@style/TittleStyle">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@color/griscard">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    style="@style/TittleCardStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registro de Reciclaje"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/img_basura_blanca"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/basurablanca">
+
+                    </ImageView>
+
+                    <TextView
+                        style="@style/Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Residuos Aprovechables limpios y secos, como plástico, vidrio, metales, papel y cartón."
+                        android:layout_gravity="start">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cantidad"
+                        android:layout_weight="1"                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/cant_aprov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/griscard"
+                        android:hint="No"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        >
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peso Aprox (kg)"
+                        android:layout_weight="1">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/peso_aprov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="3"
+                        android:background="@color/griscard"
+                        android:hint="Kg"
+                        android:textAlignment="center"
+                        android:inputType="number">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        style="@style/Recicle_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mes"
+                        android:layout_weight="8">
+
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/spinnerMonthsAprov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:entries="@array/months"
+                        android:layout_weight="3"
+                        android:scrollbarSize="10dp"
+                        android:textAlignment="center"
+                        android:background="@color/griscard">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/btnRegistrar_Aprov"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/green"
+                        android:text="Registrar Reciclaje"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        >
+                    </Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/grismenu"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical|center">
+
+        <ImageView
+            android:id="@+id/img_menu_registro"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logoverde"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_estadistica"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/estadisticas"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_tips"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tips"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_menu_puntos"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/puntos"
+            android:layout_margin="22dp"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

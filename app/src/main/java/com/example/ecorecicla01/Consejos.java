@@ -22,7 +22,7 @@ public class Consejos extends AppCompatActivity {
         menu_puntos = findViewById(R.id.img_menu_puntos);
         menu_home =findViewById(R.id.img_menu_home);
 
-        Intent recicle1 = new Intent(getApplicationContext(), Consejos.class);
+        Intent recicle1 = new Intent(getApplicationContext(), Categorias.class);
         Intent estadisticas = new Intent(getApplicationContext(), Estadisticas.class);
         Intent consejos1 = new Intent(getApplicationContext(), Consejos.class);
         Intent home = new Intent(getApplicationContext(), Home.class);
