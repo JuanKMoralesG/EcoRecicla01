@@ -74,6 +74,7 @@ public class NoAprovechables extends AppCompatActivity {
         menu_reciclar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recicle1.putExtra("idUser",idUser);
                 startActivity(recicle1);
             }
         });
@@ -81,6 +82,7 @@ public class NoAprovechables extends AppCompatActivity {
         menu_estadisticas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                estadisticas.putExtra("idUser",idUser);
                 startActivity(estadisticas);
             }
         });

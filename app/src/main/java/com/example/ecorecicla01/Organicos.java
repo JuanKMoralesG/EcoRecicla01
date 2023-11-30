@@ -73,6 +73,7 @@ public class Organicos extends AppCompatActivity {
         menu_reciclar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recicle1.putExtra("idUser",idUser);
                 startActivity(recicle1);
             }
         });
@@ -80,9 +81,11 @@ public class Organicos extends AppCompatActivity {
         menu_estadisticas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                estadisticas.putExtra("idUser",idUser);
                 startActivity(estadisticas);
             }
         });
+        
 
         menu_home.setOnClickListener(new View.OnClickListener() {
             @Override

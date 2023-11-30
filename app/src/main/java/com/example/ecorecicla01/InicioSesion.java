@@ -68,6 +68,7 @@ public class InicioSesion extends AppCompatActivity {
                                 }catch (InterruptedException e){
                                     throw new RuntimeException(e);
                                 }
+
                                 startActivity(home);
                                 break;
                             }else{

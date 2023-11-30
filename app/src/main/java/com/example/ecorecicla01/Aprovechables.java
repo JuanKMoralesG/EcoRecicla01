@@ -30,9 +30,6 @@ public class Aprovechables extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aprovechables);
 
-        Intent receive = getIntent();
-        String idUser = receive.getStringExtra("idUser");
-
         cantidad = findViewById(R.id.cant_aprov);
         peso = findViewById(R.id.peso_aprov);
         mes = findViewById(R.id.spinnerMonthsAprov);
@@ -48,11 +45,16 @@ public class Aprovechables extends AppCompatActivity {
         Intent consejos1 = new Intent(getApplicationContext(), Consejos.class);
         Intent home = new Intent(getApplicationContext(), Home.class);
 
+        Intent receive = getIntent();
+        String idUser = receive.getStringExtra("idUser");
+
         registrarReciclaje = findViewById(R.id.btnRegistrar_Aprov);
+
 
         registrarReciclaje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(cantidad.getText().toString().isEmpty()||peso.getText().toString().isEmpty()||
                         mes.getSelectedItem().toString().isEmpty()){
                     Toast.makeText(getApplicationContext(),"Todos los campos deben estar diligenciados",
@@ -72,6 +74,7 @@ public class Aprovechables extends AppCompatActivity {
         menu_reciclar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recicle1.putExtra("idUser",idUser);
                 startActivity(recicle1);
             }
         });
@@ -79,6 +82,7 @@ public class Aprovechables extends AppCompatActivity {
         menu_estadisticas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                estadisticas.putExtra("idUser",idUser);
                 startActivity(estadisticas);
             }
         });

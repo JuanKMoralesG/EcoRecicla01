@@ -46,6 +46,7 @@ public class RegistroUsuario extends AppCompatActivity {
             public void onClick(View v) {
                 if (validateUser()){
                     User user=createUser();
+                    nuevousuario.putExtra("idUser",user.getIdUser());
                     storageUser(user);
                     Toast.makeText(getApplicationContext(),"Registro Exitoso"
                             ,Toast.LENGTH_LONG).show();

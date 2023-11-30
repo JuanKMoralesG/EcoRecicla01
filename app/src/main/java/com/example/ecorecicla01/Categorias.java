@@ -16,6 +16,9 @@ public class Categorias extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categorias);
 
+        Intent receive = getIntent();
+        String id = receive.getStringExtra("idUser");
+
         basura_blanca = findViewById(R.id.img_basura_blanca);
         basura_verde = findViewById(R.id.img_basura_verde);
         basura_negra = findViewById(R.id.img_basura_negra);
@@ -38,6 +41,7 @@ public class Categorias extends AppCompatActivity {
         basura_blanca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                aprovechables.putExtra("idUser",id);
                 startActivity(aprovechables);
             }
         });
@@ -45,6 +49,7 @@ public class Categorias extends AppCompatActivity {
         basura_negra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                no_aprovechables.putExtra("idUser",id);
                 startActivity(no_aprovechables);
             }
         });
@@ -52,6 +57,7 @@ public class Categorias extends AppCompatActivity {
         basura_verde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                organicos.putExtra("idUser",id);
                 startActivity(organicos);
             }
         });

@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.ecorecicla01.Modelos.User;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
+
 public class Home extends AppCompatActivity {
 
     ImageView reciclar,estadistica,tips,puntos;
@@ -16,6 +23,9 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Intent receive = getIntent();
+        String id = receive.getStringExtra("idUser");
 
         reciclar = findViewById(R.id.img_logo_verde);
         estadistica = findViewById(R.id.img_Estadistica);
@@ -40,6 +50,7 @@ public class Home extends AppCompatActivity {
         reciclar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recicle.putExtra("idUser",id);
                 startActivity(recicle);
             }
         });
@@ -47,6 +58,7 @@ public class Home extends AppCompatActivity {
         estadistica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                datos.putExtra("idUser",id);
                 startActivity(datos);
             }
         });
@@ -61,6 +73,7 @@ public class Home extends AppCompatActivity {
         menu_reciclar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recicle1.putExtra("idUser",id);
                 startActivity(recicle1);
             }
         });
@@ -68,6 +81,7 @@ public class Home extends AppCompatActivity {
         menu_estadisticas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                estadisticas.putExtra("idUser",id);
                 startActivity(estadisticas);
             }
         });
@@ -85,5 +99,7 @@ public class Home extends AppCompatActivity {
                 startActivity(consejos1);
             }
         });
+
     }
+
 }

@@ -68,7 +68,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
 
                     <TextView
                         style="@style/Recicle_Text_Style"
@@ -107,15 +108,16 @@
 
                             </TextView>
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/Total_Bolsas_Blancas"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="70dp"
                                 android:hint="00"
-                                android:background="@null">
+                                android:background="@null"
+                                android:textAlignment="center">
 
-                            </EditText>
+                            </TextView>
 
                         </LinearLayout>
 
@@ -136,15 +138,16 @@
 
                             </TextView>
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/Total_Peso_Blancas"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="70dp"
                                 android:hint="00"
-                                android:background="@null">
+                                android:background="@null"
+                                android:textAlignment="center">
 
-                            </EditText>
+                            </TextView>
 
                         </LinearLayout>
 
@@ -186,16 +189,17 @@
 
                             </TextView>
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/Total_Bolsas_Negras"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="70dp"
                                 android:hint="00"
                                 android:background="@null"
-                                android:textColorHint="@color/white">
+                                android:textColor="@color/white"
+                                android:textAlignment="center">
 
-                            </EditText>
+                            </TextView>
 
                         </LinearLayout>
 
@@ -217,16 +221,17 @@
 
                             </TextView>
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/Total_Peso_Negras"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="70dp"
                                 android:hint="00"
                                 android:background="@null"
-                                android:textColorHint="@color/white">
+                                android:textColor="@color/white"
+                                android:textAlignment="center">
 
-                            </EditText>
+                            </TextView>
 
                         </LinearLayout>
 
@@ -268,16 +273,17 @@
 
                             </TextView>
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/Total_Bolsas_Verdes"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="70dp"
                                 android:hint="00"
                                 android:background="@null"
-                                android:textColorHint="@color/white">
+                                android:textColor="@color/white"
+                                android:textAlignment="center">
 
-                            </EditText>
+                            </TextView>
 
                         </LinearLayout>
 
@@ -299,16 +305,17 @@
 
                             </TextView>
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/Total_Peso_Verdes"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="70dp"
                                 android:hint="00"
                                 android:background="@null"
-                                android:textColorHint="@color/white">
+                                android:textColor="@color/white"
+                                android:textAlignment="center">
 
-                            </EditText>
+                            </TextView>
 
                         </LinearLayout>
 
