@@ -66,6 +66,7 @@ public class Home extends AppCompatActivity {
         tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                consejos.putExtra("idUser",id);
                 startActivity(consejos);
             }
         });
@@ -89,6 +90,7 @@ public class Home extends AppCompatActivity {
         menu_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                home.putExtra("idUser",id);
                 startActivity(home);
             }
         });
@@ -96,6 +98,7 @@ public class Home extends AppCompatActivity {
         menu_tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                consejos1.putExtra("ideUser",id);
                 startActivity(consejos1);
             }
         });

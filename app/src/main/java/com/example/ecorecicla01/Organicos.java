@@ -85,11 +85,11 @@ public class Organicos extends AppCompatActivity {
                 startActivity(estadisticas);
             }
         });
-        
 
         menu_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                home.putExtra("idUser",idUser);
                 startActivity(home);
             }
         });
@@ -97,6 +97,7 @@ public class Organicos extends AppCompatActivity {
         menu_tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                consejos1.putExtra("ideUser",idUser);
                 startActivity(consejos1);
             }
         });

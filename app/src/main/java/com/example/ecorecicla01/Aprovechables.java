@@ -50,7 +50,6 @@ public class Aprovechables extends AppCompatActivity {
 
         registrarReciclaje = findViewById(R.id.btnRegistrar_Aprov);
 
-
         registrarReciclaje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,6 +89,7 @@ public class Aprovechables extends AppCompatActivity {
         menu_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                home.putExtra("idUser",idUser);
                 startActivity(home);
             }
         });
@@ -97,6 +97,7 @@ public class Aprovechables extends AppCompatActivity {
         menu_tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                consejos1.putExtra("ideUser",idUser);
                 startActivity(consejos1);
             }
         });

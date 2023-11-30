@@ -27,9 +27,13 @@ public class Consejos extends AppCompatActivity {
         Intent consejos1 = new Intent(getApplicationContext(), Consejos.class);
         Intent home = new Intent(getApplicationContext(), Home.class);
 
+        Intent receive = getIntent();
+        String id = receive.getStringExtra("idUser");
+
         menu_reciclar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recicle1.putExtra("idUser",id);
                 startActivity(recicle1);
             }
         });
@@ -37,6 +41,7 @@ public class Consejos extends AppCompatActivity {
         menu_estadisticas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                estadisticas.putExtra("idUser",id);
                 startActivity(estadisticas);
             }
         });
@@ -44,6 +49,7 @@ public class Consejos extends AppCompatActivity {
         menu_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                home.putExtra("idUser",id);
                 startActivity(home);
             }
         });
@@ -51,6 +57,7 @@ public class Consejos extends AppCompatActivity {
         menu_tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                consejos1.putExtra("ideUser",id);
                 startActivity(consejos1);
             }
         });
