@@ -99,19 +99,6 @@
                     android:layout_marginStart="12dp"
                     android:src="@drawable/reciclaje"/>
 
-                <EditText
-                    android:id="@+id/editTextText2"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="450dp"
-                    android:ems="10"
-                    android:textColorHint="@color/gray"
-                    android:fontFamily="@font/cabin_regular"
-                    android:inputType="text"
-                    android:background="#8DFFFFFF"
-                    android:text="Comparte tu consejo" />
-
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="match_parent"
